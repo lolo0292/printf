@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:27:20 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/22 12:01:46 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/22 13:04:35 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,15 @@
 int	ft_puthex(unsigned int n, char format)
 {
 	int		len;
-	char	*base;
+	char	*hex;
 
 	len = 0;
 	if (format == 'x')
-		base = "0123456789abcdef";
-	else
-		base = "0123456789ABCDEF";
+		hex = "0123456789abcdef";
+	if (format == 'X')
+		hex = "0123456789ABCDEF";
 	if (n >= 16)
 		len += ft_puthex(n / 16, format);
-	len += ft_putchar(base[n % 16]);
+	len += ft_putchar(hex[n % 16]);
 	return (len);
 }

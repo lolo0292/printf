@@ -6,17 +6,19 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:25:12 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/22 12:01:50 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/22 12:48:14 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 // Function to print a signed integer
+
 int	ft_putnbr(int n)
 {
 	int		len;
-	char	c;
+	char	buffer[12];
+	int		i;
 
 	len = 0;
 	if (n == -2147483648)
@@ -26,9 +28,14 @@ int	ft_putnbr(int n)
 		len += ft_putchar('-');
 		n = -n;
 	}
-	if (n >= 10)
-		len += ft_putnbr(n / 10);
-	c = (n % 10) + '0';
-	len += ft_putchar(c);
+	i = 0;
+	while (n >= 10)
+	{
+		buffer[i++] = (n % 10) + '0';
+		n = n / 10;
+	}
+	buffer[i++] = n + '0';
+	while (--i >= 0)
+		len += ft_putchar(buffer[i]);
 	return (len);
 }
