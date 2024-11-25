@@ -9,7 +9,7 @@ SRCS = ft_printf.c \
 		ft_putunsigned.c
 
 OBJ = $(SRCS:.c=.o)
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 

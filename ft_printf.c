@@ -6,13 +6,12 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:47:15 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/22 14:37:23 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:16:26 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// Main function to mimic printf behavior
 int	ft_formats(va_list args, const char format)
 {
 	int	print_length;
@@ -35,6 +34,7 @@ int	ft_formats(va_list args, const char format)
 	return (print_length);
 }
 
+// mimic printf behavior
 int	ft_printf(const char *str, ...)
 {
 	int		i;

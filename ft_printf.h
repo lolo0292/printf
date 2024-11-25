@@ -6,8 +6,12 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:49:36 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/22 12:02:48 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 17:20:36 by lleichtn         ###   ########.fr       */
 /*                                                                            */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/* DEFINES                                                                    */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
@@ -26,10 +30,6 @@
 # include <strings.h>
 # include <unistd.h>
 # include <wchar.h>
-
-/* ************************************************************************** */
-/* DEFINES                                                                    */
-/* ************************************************************************** */
 
 /* ************************************************************************** */
 /* STRUCTURES                                                                 */
@@ -59,11 +59,12 @@ typedef struct s_format
 
 int			ft_printf(const char *format, ...);
 int			ft_putchar(char c);
-int			ft_puthex(unsigned int n, char format);
+// int			ft_puthex(unsigned int n, char format);
 int			ft_putnbr(int n);
-int			ft_putstr(char *str);
+int			ft_putstr(const char *str);
 int			ft_putunsigned(unsigned int n);
 int			ft_putptr(void *ptr);
+int			ft_puthex(unsigned long n, char format);
 
 /* ************************************************************************** */
 /* DEBUG                                                                      */

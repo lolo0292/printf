@@ -6,14 +6,14 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:27:20 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/22 13:04:35 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:42:00 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 // Function to print a number in hexadecimal format
-int	ft_puthex(unsigned int n, char format)
+int	ft_puthex(unsigned long n, char format)
 {
 	int		len;
 	char	*hex;

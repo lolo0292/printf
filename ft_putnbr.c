@@ -6,14 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:25:12 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/22 12:48:14 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:16:47 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 // Function to print a signed integer
-
 int	ft_putnbr(int n)
 {
 	int		len;
