@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:49:36 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/25 17:20:36 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:26:26 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,24 +34,6 @@
 /* ************************************************************************** */
 /* STRUCTURES                                                                 */
 /* ************************************************************************** */
-
-typedef struct s_flags
-{
-	int		hash;
-	int		zero;
-	int		minus;
-	int		plus;
-	int		space;
-}			t_flags;
-
-typedef struct s_format
-{
-	t_flags	flags;
-	int		width;
-	int		precision;
-	int		length;
-	char	type;
-}			t_format;
 
 /* ************************************************************************** */
 /* PROTO                                                                      */

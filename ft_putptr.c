@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:30:01 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/25 18:19:02 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/12/03 15:27:43 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,24 +31,23 @@ int	ft_putptr(void *ptr)
 	}
 	return (len);
 }
+// int main(void)
+// {
+//     printf("Test 1 : ");
+//     ft_putptr((void*)0); // Doit afficher : 0x0
+//     printf("\n");
 
-int main(void)
-{
-    printf("Test 1 : ");
-    ft_putptr(0); // Doit afficher : 0x0
-    printf("\n");
+//     printf("Test 2 : ");
+//     printf("%p %p %p", (void*)0, (void*)0, (void*)0); 
+//     printf("\n");
 
-    printf("Test 2 : ");
-    printf("%p %p %p", (void*)0, (void*)0, (void*)0); 
-    printf("\n");
+//     printf("Test 3 : ");
+//     ft_putptr((void *)0);
+//     printf(" ");
+//     ft_putptr((void *)0);
+//     printf(" ");
+//     ft_putptr((void *)0);
+//     printf("\n");
 
-    printf("Test 3 : ");
-    ft_putptr((void *)0);
-    printf(" ");
-    ft_putptr((void *)0);
-    printf(" ");
-    ft_putptr((void *)0);
-    printf("\n");
-
-    return 0;
-}
+//     return 0;
+// }
